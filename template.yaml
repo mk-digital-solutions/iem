@@ -1,0 +1,69 @@
+central-auth:
+    keycloak:
+        customerRealmAdmin:
+            # 
+            # Email of the initial IEM admin
+            email: denis@mekatronik.com.br
+            # 
+            # first name of the initial IEM admin
+            firstName: Denis
+            # 
+            # last name of the initial IEM admin
+            lastName: Leite
+            # 
+            # username of the initial IEM admin
+            username: admin
+        initialUser:
+            # 
+            # email of the initial keycloak user
+            email: denis@mekatronik.com.br
+            # 
+            # Enable creation of the initial IEM user
+            enabled: true
+            # 
+            # first name of the initial keycloak user
+            firstName: Denis
+            # 
+            # last name of the initial keycloak user
+            lastName: Leite
+            # 
+            # username of the initial keycloak user
+            username: admin
+global:
+    # 
+    # Application Secret Key
+    applicationSecretKey: 78eb48d3-6f93-49c7-815c-e13a306a5aa8
+    # 
+    # Password for Customer Realm Admin
+    customerAdminPassword: Admin@123456
+    # 
+    # Password for database user
+    databaseUserPassword: "Admin@123456"
+    # 
+    # Hostname for accessing the IEM
+    hostname: "iem.edge.local"
+    # 
+    # Password for IAM administrator
+    iamAdminPassword: Admin@123456
+    # 
+    # Password for IAM Auth Proxy
+    iamAuthProxyClientSecret: ""
+    # 
+    # Client Secret for IAM SDK
+    iamSdkClientSecret: ""
+    # 
+    # Password for IEM administrator
+    iemAdminPassword: Admin@123456
+    # 
+    # sets the passwords of initial users as temporary
+    temporaryPassword: false
+    # Storage class that will be used for creating Persistent Volume Claims for IEM Core Services like Docker Registry Service
+    storageClass: local-path
+    #
+    # Storage class that will be used for creating Persistent Volume Claims for Postgres database
+    storageClassPg: local-path
+output:
+    # 
+    # Print out initial user passwords?
+    printPasswords: true
+
