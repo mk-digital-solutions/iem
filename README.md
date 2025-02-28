@@ -3,7 +3,7 @@
 ```
 sudo apt-get update
 sudo apt upgrade
-sudo snap install curl
+sudo apt install curl
 curl -sfL https://get.k3s.io | sh -
 mkdir ~/.kube
 sudo cp /etc/rancher/k3s/k3s.yaml ~/.kube/config
