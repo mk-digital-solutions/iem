@@ -28,12 +28,8 @@ sudo kubectl delete -f /var/lib/rancher/k3s/server/manifests/traefik.yaml -n kub
 
 | Gerar certificado IP | Gerar certificado DNS |
 |----------------------|-----------------------|
-| ```bash             | ```bash              |
-| cd certs-generator_IP_Ubuntu22 | cd certs-generator_IP_Ubuntu22 |
-| chmod +x gen_with_ca-IP.sh | chmod +x gen_with_ca-DNS.sh |
-| ./gen_with_ca-IP.sh 192.168.249.146 | ./gen_with_ca-DNS.sh nome.do.hostname |
-| cd ..                | cd ..                |
-| ```                  | ```                  |
+| ```bash<br>cd certs-generator_IP_Ubuntu22<br>chmod +x gen_with_ca-IP.sh<br>./gen_with_ca-IP.sh 192.168.249.146<br>cd ..<br>``` | ```bash<br>cd certs-generator_IP_Ubuntu22<br>chmod +x gen_with_ca-DNS.sh<br>./gen_with_ca-DNS.sh nome.do.hostname<br>cd ..<br>``` |
+
 
 
 OBS: necessário um servidor DNS. Caso não tenha, verifique o [Tutorial do Pi-hole](dns-server/pihole.md).
