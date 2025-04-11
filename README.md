@@ -26,7 +26,7 @@ sudo touch /var/lib/rancher/k3s/server/manifests/traefik.yaml.skip
 sudo kubectl delete -f /var/lib/rancher/k3s/server/manifests/traefik.yaml -n kube-system
 ```
 
-| IP |  | DNS |
+| IP |  DNS |
 |-----------|---------------------------------------------------------------|----------------|
 | cd certs-generator_IP_Ubuntu22 <br>chmod +x gen_with_ca-IP.sh <br>./gen_with_ca-IP.sh 192.168.249.146 <br>cd .. | cd certs-generator_IP_Ubuntu22 <br>chmod +x gen_with_ca-DNS.sh <br>./gen_with_ca-DNS.sh nome.do.hostname <br>cd .. |
 
