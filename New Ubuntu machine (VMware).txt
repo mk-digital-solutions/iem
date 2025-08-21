@@ -23,5 +23,6 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 sudo systemctl restart docker
 
+# Reboot nao e necessario, apenas feche e abra o terminal
+# sudo reboot
 
-sudo reboot
